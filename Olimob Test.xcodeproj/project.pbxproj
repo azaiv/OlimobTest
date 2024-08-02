@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5502C3612C5CDE6F00E96FDC /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502C3602C5CDE6F00E96FDC /* LineChartView.swift */; };
+		5502C3632C5CDEFE00E96FDC /* CleanerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502C3622C5CDEFE00E96FDC /* CleanerManager.swift */; };
+		5502C3672C5CE90400E96FDC /* high_frequency_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5502C3662C5CE90400E96FDC /* high_frequency_sound.mp3 */; };
+		5502C3692C5CEF1300E96FDC /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502C3682C5CEF1300E96FDC /* RateView.swift */; };
+		5502C36B2C5CEF4E00E96FDC /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502C36A2C5CEF4E00E96FDC /* Rate.swift */; };
+		5502C36D2C5CF9A000E96FDC /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502C36C2C5CF9A000E96FDC /* HapticManager.swift */; };
+		550B78BD2C5A5E4800B014AC /* OlimobTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78BC2C5A5E4800B014AC /* OlimobTestApp.swift */; };
+		550B78C12C5A5E4900B014AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550B78C02C5A5E4900B014AC /* Assets.xcassets */; };
+		550B78C42C5A5E4900B014AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550B78C32C5A5E4900B014AC /* Preview Assets.xcassets */; };
+		550B78C92C5A5E4900B014AC /* olimob_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 550B78C72C5A5E4900B014AC /* olimob_test.xcdatamodeld */; };
+		550B78D62C5A5F1C00B014AC /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78D52C5A5F1C00B014AC /* TabBarView.swift */; };
+		550B78D92C5A5F8D00B014AC /* TabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78D82C5A5F8D00B014AC /* TabType.swift */; };
+		550B78DF2C5A616800B014AC /* AudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78DE2C5A616800B014AC /* AudioView.swift */; };
+		550B78E12C5A617000B014AC /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78E02C5A617000B014AC /* HistoryView.swift */; };
+		550B78E42C5A617D00B014AC /* CleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78E32C5A617D00B014AC /* CleanerView.swift */; };
+		550B78E62C5A618300B014AC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78E52C5A618300B014AC /* SettingsView.swift */; };
+		550B78E92C5A632A00B014AC /* SettingsSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78E82C5A632A00B014AC /* SettingsSections.swift */; };
+		550B78EC2C5A666C00B014AC /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78EB2C5A666C00B014AC /* RowView.swift */; };
+		550B78F02C5A69DF00B014AC /* View + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78EF2C5A69DF00B014AC /* View + Ext.swift */; };
+		550B78F72C5A719E00B014AC /* PrimaryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78F62C5A719E00B014AC /* PrimaryTabView.swift */; };
+		550B78FC2C5A943900B014AC /* AudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78FB2C5A943900B014AC /* AudioSession.swift */; };
+		550B78FF2C5AA87D00B014AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B78FE2C5AA87D00B014AC /* Constants.swift */; };
+		550B79012C5AA91500B014AC /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B79002C5AA91500B014AC /* Color + Ext.swift */; };
+		550B790D2C5AC34800B014AC /* MavenPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 550B790A2C5AC34800B014AC /* MavenPro-Bold.ttf */; };
+		550B790E2C5AC34800B014AC /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 550B790B2C5AC34800B014AC /* MavenPro-Regular.ttf */; };
+		550B790F2C5AC34800B014AC /* MavenPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 550B790C2C5AC34800B014AC /* MavenPro-Medium.ttf */; };
+		558BA2812C5BA1DD00B1CB04 /* SoundData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558BA27F2C5BA1DD00B1CB04 /* SoundData.swift */; };
+		558BA2832C5BA29D00B1CB04 /* SoundStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558BA2822C5BA29D00B1CB04 /* SoundStorageService.swift */; };
+		558BA2862C5BA2F600B1CB04 /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558BA2852C5BA2F600B1CB04 /* SoundModel.swift */; };
+		558BA2882C5BA87400B1CB04 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558BA2872C5BA87400B1CB04 /* Persistence.swift */; };
+		558BA28B2C5BBCCD00B1CB04 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558BA28A2C5BBCCD00B1CB04 /* CircularProgressView.swift */; };
+		558BA28D2C5BBD3600B1CB04 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558BA28C2C5BBD3600B1CB04 /* SettingsManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5502C3602C5CDE6F00E96FDC /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		5502C3622C5CDEFE00E96FDC /* CleanerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerManager.swift; sourceTree = "<group>"; };
+		5502C3662C5CE90400E96FDC /* high_frequency_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = high_frequency_sound.mp3; sourceTree = "<group>"; };
+		5502C3682C5CEF1300E96FDC /* RateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
+		5502C36A2C5CEF4E00E96FDC /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		5502C36C2C5CF9A000E96FDC /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		550B78B92C5A5E4800B014AC /* Olimob Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Olimob Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		550B78BC2C5A5E4800B014AC /* OlimobTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlimobTestApp.swift; sourceTree = "<group>"; };
+		550B78C02C5A5E4900B014AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		550B78C32C5A5E4900B014AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		550B78C82C5A5E4900B014AC /* olimob_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = olimob_test.xcdatamodel; sourceTree = "<group>"; };
+		550B78D52C5A5F1C00B014AC /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		550B78D82C5A5F8D00B014AC /* TabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabType.swift; sourceTree = "<group>"; };
+		550B78DE2C5A616800B014AC /* AudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioView.swift; sourceTree = "<group>"; };
+		550B78E02C5A617000B014AC /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		550B78E32C5A617D00B014AC /* CleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerView.swift; sourceTree = "<group>"; };
+		550B78E52C5A618300B014AC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		550B78E82C5A632A00B014AC /* SettingsSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSections.swift; sourceTree = "<group>"; };
+		550B78EB2C5A666C00B014AC /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		550B78EF2C5A69DF00B014AC /* View + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Ext.swift"; sourceTree = "<group>"; };
+		550B78F62C5A719E00B014AC /* PrimaryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTabView.swift; sourceTree = "<group>"; };
+		550B78FB2C5A943900B014AC /* AudioSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSession.swift; sourceTree = "<group>"; };
+		550B78FE2C5AA87D00B014AC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		550B79002C5AA91500B014AC /* Color + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
+		550B79062C5AADF500B014AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550B790A2C5AC34800B014AC /* MavenPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Bold.ttf"; sourceTree = "<group>"; };
+		550B790B2C5AC34800B014AC /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Regular.ttf"; sourceTree = "<group>"; };
+		550B790C2C5AC34800B014AC /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Medium.ttf"; sourceTree = "<group>"; };
+		558BA27F2C5BA1DD00B1CB04 /* SoundData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundData.swift; sourceTree = "<group>"; };
+		558BA2822C5BA29D00B1CB04 /* SoundStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundStorageService.swift; sourceTree = "<group>"; };
+		558BA2852C5BA2F600B1CB04 /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
+		558BA2872C5BA87400B1CB04 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		558BA28A2C5BBCCD00B1CB04 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		558BA28C2C5BBD3600B1CB04 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		550B78B62C5A5E4800B014AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		550B78B02C5A5E4800B014AC = {
+			isa = PBXGroup;
+			children = (
+				550B78BB2C5A5E4800B014AC /* iOS App */,
+				550B78BA2C5A5E4800B014AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		550B78BA2C5A5E4800B014AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				550B78B92C5A5E4800B014AC /* Olimob Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		550B78BB2C5A5E4800B014AC /* iOS App */ = {
+			isa = PBXGroup;
+			children = (
+				550B78CF2C5A5EB300B014AC /* App */,
+				550B78D12C5A5EEA00B014AC /* Module */,
+				550B78D22C5A5EF400B014AC /* Service */,
+				550B78ED2C5A69B700B014AC /* Library */,
+				550B78FD2C5AA87100B014AC /* Data */,
+				550B78D02C5A5EE100B014AC /* Resources */,
+			);
+			path = "iOS App";
+			sourceTree = "<group>";
+		};
+		550B78C22C5A5E4900B014AC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				550B78C32C5A5E4900B014AC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		550B78CF2C5A5EB300B014AC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				550B78BC2C5A5E4800B014AC /* OlimobTestApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		550B78D02C5A5EE100B014AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5502C3662C5CE90400E96FDC /* high_frequency_sound.mp3 */,
+				550B79062C5AADF500B014AC /* Info.plist */,
+				550B78C02C5A5E4900B014AC /* Assets.xcassets */,
+				550B78C22C5A5E4900B014AC /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		550B78D12C5A5EEA00B014AC /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				550B78D42C5A5F0F00B014AC /* Navigation */,
+				550B78DA2C5A614200B014AC /* Audio */,
+				550B78DB2C5A614800B014AC /* History */,
+				550B78DC2C5A614E00B014AC /* Cleaner */,
+				550B78DD2C5A615400B014AC /* Settings */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		550B78D22C5A5EF400B014AC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				550B78D32C5A5EFB00B014AC /* Core Data */,
+				550B78FB2C5A943900B014AC /* AudioSession.swift */,
+				558BA2822C5BA29D00B1CB04 /* SoundStorageService.swift */,
+				5502C36C2C5CF9A000E96FDC /* HapticManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		550B78D32C5A5EFB00B014AC /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				550B78C72C5A5E4900B014AC /* olimob_test.xcdatamodeld */,
+				558BA2872C5BA87400B1CB04 /* Persistence.swift */,
+				558BA27F2C5BA1DD00B1CB04 /* SoundData.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		550B78D42C5A5F0F00B014AC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				550B78D72C5A5F8200B014AC /* Model */,
+				550B78D52C5A5F1C00B014AC /* TabBarView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		550B78D72C5A5F8200B014AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				550B78D82C5A5F8D00B014AC /* TabType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		550B78DA2C5A614200B014AC /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				558BA2892C5BBCBF00B1CB04 /* Helpers */,
+				550B78DE2C5A616800B014AC /* AudioView.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		550B78DB2C5A614800B014AC /* History */ = {
+			isa = PBXGroup;
+			children = (
+				558BA2842C5BA2ED00B1CB04 /* Model */,
+				5502C3602C5CDE6F00E96FDC /* LineChartView.swift */,
+				550B78E02C5A617000B014AC /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		550B78DC2C5A614E00B014AC /* Cleaner */ = {
+			isa = PBXGroup;
+			children = (
+				550B78F82C5A85DE00B014AC /* Model */,
+				550B78E32C5A617D00B014AC /* CleanerView.swift */,
+				5502C3622C5CDEFE00E96FDC /* CleanerManager.swift */,
+			);
+			path = Cleaner;
+			sourceTree = "<group>";
+		};
+		550B78DD2C5A615400B014AC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				550B78E72C5A631F00B014AC /* Model */,
+				550B78EA2C5A666300B014AC /* Helper */,
+				550B78E52C5A618300B014AC /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		550B78E72C5A631F00B014AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				550B78E82C5A632A00B014AC /* SettingsSections.swift */,
+				558BA28C2C5BBD3600B1CB04 /* SettingsManager.swift */,
+				5502C36A2C5CEF4E00E96FDC /* Rate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		550B78EA2C5A666300B014AC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				550B78EB2C5A666C00B014AC /* RowView.swift */,
+				550B78F62C5A719E00B014AC /* PrimaryTabView.swift */,
+				5502C3682C5CEF1300E96FDC /* RateView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		550B78ED2C5A69B700B014AC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				550B78EE2C5A69D500B014AC /* Extensions */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		550B78EE2C5A69D500B014AC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				550B78EF2C5A69DF00B014AC /* View + Ext.swift */,
+				550B79002C5AA91500B014AC /* Color + Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		550B78F82C5A85DE00B014AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		550B78FD2C5AA87100B014AC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				550B79022C5AADA800B014AC /* Fonts */,
+				550B78FE2C5AA87D00B014AC /* Constants.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		550B79022C5AADA800B014AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				550B790A2C5AC34800B014AC /* MavenPro-Bold.ttf */,
+				550B790C2C5AC34800B014AC /* MavenPro-Medium.ttf */,
+				550B790B2C5AC34800B014AC /* MavenPro-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		558BA2842C5BA2ED00B1CB04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				558BA2852C5BA2F600B1CB04 /* SoundModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		558BA2892C5BBCBF00B1CB04 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				558BA28A2C5BBCCD00B1CB04 /* CircularProgressView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		550B78B82C5A5E4800B014AC /* Olimob Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 550B78CC2C5A5E4900B014AC /* Build configuration list for PBXNativeTarget "Olimob Test" */;
+			buildPhases = (
+				550B78B52C5A5E4800B014AC /* Sources */,
+				550B78B62C5A5E4800B014AC /* Frameworks */,
+				550B78B72C5A5E4800B014AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Olimob Test";
+			packageProductDependencies = (
+			);
+			productName = "olimob-test";
+			productReference = 550B78B92C5A5E4800B014AC /* Olimob Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		550B78B12C5A5E4800B014AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					550B78B82C5A5E4800B014AC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 550B78B42C5A5E4800B014AC /* Build configuration list for PBXProject "Olimob Test" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 550B78B02C5A5E4800B014AC;
+			packageReferences = (
+			);
+			productRefGroup = 550B78BA2C5A5E4800B014AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				550B78B82C5A5E4800B014AC /* Olimob Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		550B78B72C5A5E4800B014AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550B790E2C5AC34800B014AC /* MavenPro-Regular.ttf in Resources */,
+				550B78C42C5A5E4900B014AC /* Preview Assets.xcassets in Resources */,
+				550B78C12C5A5E4900B014AC /* Assets.xcassets in Resources */,
+				550B790D2C5AC34800B014AC /* MavenPro-Bold.ttf in Resources */,
+				550B790F2C5AC34800B014AC /* MavenPro-Medium.ttf in Resources */,
+				5502C3672C5CE90400E96FDC /* high_frequency_sound.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		550B78B52C5A5E4800B014AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5502C36D2C5CF9A000E96FDC /* HapticManager.swift in Sources */,
+				550B78F02C5A69DF00B014AC /* View + Ext.swift in Sources */,
+				550B78FF2C5AA87D00B014AC /* Constants.swift in Sources */,
+				550B78E12C5A617000B014AC /* HistoryView.swift in Sources */,
+				558BA2882C5BA87400B1CB04 /* Persistence.swift in Sources */,
+				550B78FC2C5A943900B014AC /* AudioSession.swift in Sources */,
+				550B78C92C5A5E4900B014AC /* olimob_test.xcdatamodeld in Sources */,
+				558BA2832C5BA29D00B1CB04 /* SoundStorageService.swift in Sources */,
+				550B78E92C5A632A00B014AC /* SettingsSections.swift in Sources */,
+				5502C3692C5CEF1300E96FDC /* RateView.swift in Sources */,
+				550B78D62C5A5F1C00B014AC /* TabBarView.swift in Sources */,
+				550B78E62C5A618300B014AC /* SettingsView.swift in Sources */,
+				550B78EC2C5A666C00B014AC /* RowView.swift in Sources */,
+				550B78BD2C5A5E4800B014AC /* OlimobTestApp.swift in Sources */,
+				5502C36B2C5CEF4E00E96FDC /* Rate.swift in Sources */,
+				550B78D92C5A5F8D00B014AC /* TabType.swift in Sources */,
+				5502C3612C5CDE6F00E96FDC /* LineChartView.swift in Sources */,
+				550B78DF2C5A616800B014AC /* AudioView.swift in Sources */,
+				550B78F72C5A719E00B014AC /* PrimaryTabView.swift in Sources */,
+				550B78E42C5A617D00B014AC /* CleanerView.swift in Sources */,
+				558BA28B2C5BBCCD00B1CB04 /* CircularProgressView.swift in Sources */,
+				558BA2812C5BA1DD00B1CB04 /* SoundData.swift in Sources */,
+				5502C3632C5CDEFE00E96FDC /* CleanerManager.swift in Sources */,
+				558BA28D2C5BBD3600B1CB04 /* SettingsManager.swift in Sources */,
+				558BA2862C5BA2F600B1CB04 /* SoundModel.swift in Sources */,
+				550B79012C5AA91500B014AC /* Color + Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		550B78CA2C5A5E4900B014AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		550B78CB2C5A5E4900B014AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		550B78CD2C5A5E4900B014AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS App/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS App/Resources/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Mic use";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "project.olimob-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		550B78CE2C5A5E4900B014AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS App/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS App/Resources/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Mic use";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "project.olimob-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		550B78B42C5A5E4800B014AC /* Build configuration list for PBXProject "Olimob Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				550B78CA2C5A5E4900B014AC /* Debug */,
+				550B78CB2C5A5E4900B014AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		550B78CC2C5A5E4900B014AC /* Build configuration list for PBXNativeTarget "Olimob Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				550B78CD2C5A5E4900B014AC /* Debug */,
+				550B78CE2C5A5E4900B014AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		550B78C72C5A5E4900B014AC /* olimob_test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				550B78C82C5A5E4900B014AC /* olimob_test.xcdatamodel */,
+			);
+			currentVersion = 550B78C82C5A5E4900B014AC /* olimob_test.xcdatamodel */;
+			path = olimob_test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 550B78B12C5A5E4800B014AC /* Project object */;
+}
