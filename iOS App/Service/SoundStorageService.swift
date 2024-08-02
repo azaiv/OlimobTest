@@ -56,7 +56,7 @@ final class SoundStorageService {
             try context.save()
             completion(true)
         } catch {
-            print("Error clearing data: \(error.localizedDescription)")
+            print(error.localizedDescription)
             completion(false)
         }
     }

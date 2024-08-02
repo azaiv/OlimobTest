@@ -28,21 +28,6 @@ class CleanerManager: ObservableObject {
              }
              audioPlayer?.play()
          }
-         
-//         do {
-//             DispatchQueue.main.async {
-//                 audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
-//                 audioPlayer?.prepareToPlay()
-//                 audioPlayer?.setVolume(1.0, fadeDuration: .infinity)
-//                 self.isPlaying = true
-//                 audioPlayer?.play()
-//             }
-//         } catch {
-//             DispatchQueue.main.async {
-//                 self.isPlaying = false
-//             }
-//             print(error.localizedDescription)
-//         }
      }
      
      func stopSound() {

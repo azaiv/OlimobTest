@@ -15,8 +15,7 @@ class AudioRecorder: NSObject, ObservableObject, AVAudioRecorderDelegate {
             try audioSession.setCategory(.record, mode: .default, options: .defaultToSpeaker)
             try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
         } catch {
-            let nsError = error as NSError
-            print("Failed to set up audio session: \(nsError.localizedDescription), code: \(nsError.code)")
+            print(error.localizedDescription)
         }
     }
     
@@ -44,7 +43,7 @@ class AudioRecorder: NSObject, ObservableObject, AVAudioRecorderDelegate {
                 self.updateAveragePower()
             }
         } catch {
-            print("Failed to start recording: \(error)")
+            print(error.localizedDescription)
         }
     }
     
